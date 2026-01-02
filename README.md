@@ -1,21 +1,33 @@
-# Terminal-Based To-Do List
+# Niko’s Local Git Pulse
 
-A simple Python terminal application to manage your daily tasks. This project allows you to **add, view, remove, and clear tasks** directly from the terminal.
+Niko’s Local Git Pulse is a desktop GUI application that visualizes activity from your local Git repositories. It provides a GitHub-style contribution heatmap and a list of recent commits, all rendered locally using Python.
+
+The goal of this project is to help developers quickly understand how active their projects are without relying on GitHub or remote repositories.
 
 ## Features
 
-- Add a task to your to-do list
-- View all tasks in the list
-- Remove a specific task by number
-- Clear all tasks
-- Exit the program
+- Automatically scans a local directory for Git repositories
+- Displays repositories in a scrollable sidebar
+- Shows a 52-week contribution heatmap based on commit history
+- Displays recent commits with date, hash, and message
+- Modern dark UI using CustomTkinter
 
-## How to Use
+## MUST DO BEFORE RUNNING THE CODE
+- Change the base_path at line 36 tto work with your projects folder
 
-1. Clone the repository or download `to-do-list.py`.
-2. Open a terminal and navigate to the folder containing `to-do-list.py`.
-3. Run the program:
+## Technologies Used
+
+- Python
+- CustomTkinter
+- GitPython
+- datetime
+- os
+
+## Installation
+
+1. Clone the repository or download the source code.
+
+2. Install required dependencies:
 
 ```bash
-python to-do-list.py
-****
+pip install customtkinter GitPython
